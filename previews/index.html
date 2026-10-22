@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crepe One · pick a direction</title>
+<meta name="theme-color" content="#140b07">
+<link rel="icon" href="../brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;1,9..144,500&family=Anton&family=Manrope:wght@500;700;800&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: #140b07; color: #fbeedd; font: 500 16px/1.55 Manrope, system-ui, sans-serif; padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 48px); }
+  header { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+  header img { height: 52px; width: auto; }
+  h1 { margin: 0; font: 600 clamp(2.2rem, 5.5vw, 4rem)/1 Fraunces, Georgia, serif; letter-spacing: -.03em; }
+  h1 i { color: #f7b242; font-weight: 500; }
+  .lead { margin: 12px 0 34px; color: #c8b39a; max-width: 62ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 22px; }
+  a.card { position: relative; display: grid; grid-template-rows: auto 1fr; border-radius: 24px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid rgba(247,178,66,.16); background: #1d120c; transition: transform .35s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .35s; }
+  a.card:hover { transform: translateY(-6px); border-color: #f7b242; box-shadow: 0 30px 60px -30px rgba(247,140,50,.5); }
+  a.card:focus-visible { outline: 3px solid #f7b242; outline-offset: 4px; }
+  .thumb { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #000; }
+  .thumb iframe { position: absolute; left: 0; top: 0; width: 400%; height: 400%; transform: scale(.25); transform-origin: 0 0; border: 0; pointer-events: none; }
+  .thumb.app { display: grid; place-items: center; background: radial-gradient(60% 70% at 50% 40%, #be1e2d, #6d0b16); }
+  .phone { width: 34%; aspect-ratio: 9 / 18; border-radius: 22px; border: 3px solid #2a0508; background: #fff6ea; display: grid; place-items: center; box-shadow: 0 24px 40px -18px rgba(0,0,0,.7); }
+  .phone img { width: 70%; height: auto; }
+  .body { padding: 18px 20px 22px; }
+  .tag { font: 800 .72rem Manrope; letter-spacing: .2em; text-transform: uppercase; color: #f7b242; }
+  h2 { margin: 6px 0 6px; font: 600 2rem/1 Fraunces, Georgia, serif; letter-spacing: -.02em; }
+  .b h2 { font: 400 2.2rem/1 Anton, Impact, sans-serif; text-transform: uppercase; letter-spacing: 0; }
+  p { margin: 0; color: #d9c7ae; }
+  .go { display: inline-block; margin-top: 12px; font-weight: 800; color: #f7b242; }
+  footer { margin-top: 40px; color: #8f7c66; font-size: .85rem; }
+</style>
+</head>
+<body>
+<header><img src="../brand/wordmark-white.png" alt="Crepe One" width="645" height="213"><h1>Two <i>directions</i></h1></header>
+<p class="lead">Two ways to put the first crepe in Somalia on the web. Open each one and scroll all the way through, then pick the one to build into the full site. The ordering app is linked from both.</p>
+<div class="grid">
+  <a class="card" href="a/">
+    <div class="thumb"><iframe src="a/?nointro" title="Preview A" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">A · 3D · warm</span><h2>Hot off the plate</h2><p>A dark, warm kitchen. A 3D crepe cone rises, browns, steams and gets drizzled with chocolate and pistachio, then the Crepe One logo forms around it. Scroll and the dish changes: savoury, sweet, waffles, burgers.</p><span class="go">Open A →</span></div>
+  </a>
+  <a class="card b" href="b/">
+    <div class="thumb"><iframe src="b/?nointro" title="Preview B" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">B · 3D · loud</span><h2>Bold &amp; loud</h2><p>Red poster style. Giant kinetic type, cartoon-shaded food with ink outlines. Ingredients burst out, a crepe flips and folds, and every dish snaps together from flying parts as you scroll.</p><span class="go">Open B →</span></div>
+  </a>
+  <a class="card" href="../app/">
+    <div class="thumb app"><div class="phone"><img src="../brand/wordmark-red.png" alt="" width="645" height="213"></div></div>
+    <div class="body"><span class="tag">App</span><h2>Order in the app</h2><p>The Crepe One app, built alongside these previews. Both directions link to it from their order section.</p><span class="go">Open the app →</span></div>
+  </a>
+</div>
+<footer>Previews for Crepe One · Food photos: Crepe One · 3D food modelled in code with three.js</footer>
+</body>
+</html>
